@@ -1,0 +1,36 @@
+import numpy as np
+
+## Understanding reshaping the numpy array
+
+arr = np.arange(1,13)
+## Printing the default numpy array
+print("1 D  or Default")
+print(arr)
+
+print()
+print("4*3 Matrix ")
+## It will give 4 rows and 3 columns
+print(arr.reshape(4,3))
+
+##To reshape the array and print into 4 rows and 2 columns
+## it will throw error as 4*2 cannot accomodate all the values in array
+##print(arr.reshape(4,2))
+
+print()
+
+##To reshape the array and print into 6 rows and 2 columns
+## it will throw error as 6*2 cannot accomodate all the values in array
+print("6*2 Matrix")
+print(arr.reshape(6,2))
+
+print()
+
+## saving matrix 4*2 into new variable 
+
+mat = arr.reshape(4,3)
+print("New Matrix Created")
+print(mat)
+
+## Convert the matrix into 1-D Array 
+print()
+print(mat.reshape(1,12))
