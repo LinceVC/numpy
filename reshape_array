@@ -34,3 +34,12 @@ print(mat)
 ## Convert the matrix into 1-D Array 
 print()
 print(mat.reshape(1,12))
+print()
+## To find the dimension 
+print("Dimension after reshape",mat.reshape(1,12).ndim)
+print()
+
+## Simple trick to create rows in each row and with 1 column when we are not even sure about the number of records available
+
+print("## Simple trick to create rows in each row and with 1 column when we are not even sure about the number of records available")
+print(arr.reshape(-1,1))
