@@ -1,0 +1,17 @@
+## Fancy Indexing Masking
+
+import numpy as np 
+
+m1= np.arange(12).reshape(3,4)
+print(m1)
+
+
+print()
+## Below code will return matrix with boolean values in matrix format 
+print(m1<6)
+
+
+
+## while checking the below the code will return in 1D matrix 
+## Below masking would return value where its able to get a remainder of 0
+print(m1[m1%2==0])
