@@ -1,0 +1,45 @@
+## Summarizing the data across rows and columns 
+
+
+
+arr = np.arange(0,10-1).reshape(3,3)
+print(arr)
+
+
+print("Summarinzing records")
+
+## to find the maximum of columns 
+max_column=np.max(arr, axis = 0)
+print("max from column" ,max_column)
+
+
+## to find the maximum of rows
+max_row = np.max(arr, axis = 1)
+print("Max from row",max_row)
+
+
+
+## to find the mean of rows
+mean_col = np.mean(arr, axis = 0)
+print("Mean from column",mean_col)
+
+
+## to find the mean of column
+mean_row = np.mean(arr, axis = 1)
+print("Mean from row",mean_row)
+
+## find sum of row
+sum_row=np.sum(arr,axis = 1)
+print("Sum of row ",sum_row)
+
+## Find sum of values in Column
+sum_col=np.sum(arr,axis = 0)
+print("Sum of colum ",sum_col)
+
+
+
+##Count non zero values in column
+
+
+count_row = np.count_nonzero(arr,axis = 1)
+print("Counting non zero value in row",count_row)
